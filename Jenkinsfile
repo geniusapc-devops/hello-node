@@ -8,5 +8,14 @@ pipeline {
       }
     }
 
+    stage('List dir') {
+      steps {
+        sh '''ls -al
+echo "prince is great"
+echo "hello world"
+echo "God is good"'''
+      }
+    }
+
   }
 }
